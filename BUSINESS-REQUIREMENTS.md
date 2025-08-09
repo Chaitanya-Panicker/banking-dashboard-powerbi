@@ -1,4 +1,4 @@
-# 📊 Bank Loan Summary Dashboard – Business Requirements
+# Business Requirements
 
 ---
 
