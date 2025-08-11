@@ -3,7 +3,7 @@
 <img width="1334" height="766" alt="Screenshot 1" src="https://github.com/user-attachments/assets/9efab230-5cdc-4d21-865a-f56457768bf8" />
 
 ## 🎯 Overview
-Comprehensive **multi-page banking analytics dashboard** analyzing **38,576 loan applications worth $473M**, providing strategic insights for **loan portfolio management**, **risk assessment**, and **business decision-making** across multiple dimensions.  
+**Multi-page banking analytics dashboard** analyzing **38,576 loan applications worth $473M**, providing strategic insights for **loan portfolio management**, **risk assessment**, and **business decision-making** across multiple dimensions.  
 
 > **Domain Focus**: *Financial Analytics*, *Portfolio Risk Management*, *Credit Risk Analysis*  
 
