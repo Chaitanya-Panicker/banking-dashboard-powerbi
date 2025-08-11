@@ -1,4 +1,4 @@
-# Bank Loan Portfolio Analysis Dashboard
+# Bank Loan Analysis Dashboard
 
 
 ## 📊 Project Overview
