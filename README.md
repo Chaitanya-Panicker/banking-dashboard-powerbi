@@ -1,4 +1,4 @@
-# 🏦 Bank Loan Analysis Dashboard
+# 🏦 Bank Loan Summary Dashboard
 
 <img width="1334" height="766" alt="Screenshot 1" src="https://github.com/user-attachments/assets/9efab230-5cdc-4d21-865a-f56457768bf8" />
 
