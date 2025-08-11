@@ -40,5 +40,5 @@ Comprehensive data analysis and visualization of a **bank loan portfolio** conta
 ---
 
 ## 🎯 Business Problem Solved
-**Challenge**: Bank needed comprehensive visibility into loan portfolio performance and risk distribution.  
-**Solution**: Developed a **data-driven dashboard** enabling stakeholders to monitor loan health, identify risk patterns, and make informed lending decisions — ultimately improving portfolio management and reducing financial risk exposure.  
+- **Challenge**: Bank needed comprehensive visibility into loan portfolio performance and risk distribution.  
+- **Solution**: Developed a **data-driven dashboard** enabling stakeholders to monitor loan health, identify risk patterns, and make informed lending decisions — ultimately improving portfolio management and reducing financial risk exposure.  
