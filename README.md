@@ -10,7 +10,7 @@ Comprehensive **multi-page banking analytics dashboard** analyzing **38,576 loan
 
 ## ✨ Key Features
 - **Multi-Dashboard Architecture**
---- Three interconnected dashboards (*Summary*, *Analytics*, *Details*)
+-- Three interconnected dashboards (*Summary*, *Analytics*, *Details*)
 
 - **Real-time KPI Monitoring**
 39K applications, $436M funded, 12% avg interest rate, 13.3% DTI
