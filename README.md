@@ -3,16 +3,22 @@
 <img width="1334" height="766" alt="Screenshot 1" src="https://github.com/user-attachments/assets/9efab230-5cdc-4d21-865a-f56457768bf8" />
 
 ## 🎯 Overview
-Comprehensive **multi-page banking analytics dashboard** analyzing **38,576 loan applications worth $473M**, providing strategic insights for **loan portfolio management**, **risk assessment**, and **business decision-making** across multiple dimensions.
+Comprehensive **multi-page banking analytics dashboard** analyzing **38,576 loan applications worth $473M**, providing strategic insights for **loan portfolio management**, **risk assessment**, and **business decision-making** across multiple dimensions.  
+> **Domain Focus**: *Financial Analytics*, *Portfolio Risk Management*, *Credit Risk Analysis*  
 
 ---
 
 ## ✨ Key Features
-- **Multi-Dashboard Architecture** – Three interconnected dashboards (*Summary*, *Analytics*, *Details*)  
-- **Real-time KPI Monitoring** – 39K applications, $436M funded, 12% avg interest rate, 13.3% DTI  
-- **Interactive Filtering** – Dynamic purpose and grade filters across all dashboards  
-- **Geographic Analysis** – State-wise loan distribution with interactive US map visualization  
-- **Risk Assessment Tools** – Good vs Bad loan analysis with 86.18% success rate tracking  
+- **Multi-Dashboard Architecture** – Three interconnected dashboards (*Summary*, *Analytics*, *Details*)
+
+- **Real-time KPI Monitoring** – 39K applications, $436M funded, 12% avg interest rate, 13.3% DTI
+   
+- **Interactive Filtering** – Dynamic purpose and grade filters across all dashboards
+  
+- **Geographic Analysis** – State-wise loan distribution with interactive US map visualization
+   
+- **Risk Assessment Tools** – Good vs Bad loan analysis with 86.18% success rate tracking
+  
 - **Detailed Data Drill-down** – Individual loan record exploration with complete transaction history  
 
 ---
