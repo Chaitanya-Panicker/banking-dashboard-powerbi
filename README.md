@@ -9,17 +9,23 @@ Comprehensive **multi-page banking analytics dashboard** analyzing **38,576 loan
 ---
 
 ## ✨ Key Features
-- **Multi-Dashboard Architecture** – Three interconnected dashboards (*Summary*, *Analytics*, *Details*)
+- **Multi-Dashboard Architecture**
+Three interconnected dashboards (*Summary*, *Analytics*, *Details*)
 
-- **Real-time KPI Monitoring** – 39K applications, $436M funded, 12% avg interest rate, 13.3% DTI
+- **Real-time KPI Monitoring**
+39K applications, $436M funded, 12% avg interest rate, 13.3% DTI
    
-- **Interactive Filtering** – Dynamic purpose and grade filters across all dashboards
+- **Interactive Filtering**
+Dynamic purpose and grade filters across all dashboards
   
-- **Geographic Analysis** – State-wise loan distribution with interactive US map visualization
+- **Geographic Analysis**
+State-wise loan distribution with interactive US map visualization
    
-- **Risk Assessment Tools** – Good vs Bad loan analysis with 86.18% success rate tracking
+- **Risk Assessment Tools**
+Good vs Bad loan analysis with 86.18% success rate tracking
   
-- **Detailed Data Drill-down** – Individual loan record exploration with complete transaction history  
+- **Detailed Data Drill-down**
+Individual loan record exploration with complete transaction history  
 
 ---
 
