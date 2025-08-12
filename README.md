@@ -1,87 +1,93 @@
-# 🏦 Bank Loan Summary Dashboard
+# 📊 Bank Loan Summary Dashboard
 
-<img width="1334" height="766" alt="Screenshot 1" src="https://github.com/user-attachments/assets/9efab230-5cdc-4d21-865a-f56457768bf8" />
-
-## 🎯 Overview
-**Multi-page banking analytics dashboard** analyzing **38,576 loan applications worth $473M**, providing strategic insights for **loan portfolio management**, **risk assessment**, and **business decision-making** across multiple dimensions.  
-
-> **Domain Focus**: *Financial Analytics*, *Portfolio Risk Management*, *Credit Risk Analysis*  
+## 📌 Project Overview
+This project is an **interactive dashboard** for analyzing **bank loan data**, providing insights into loan applications, funding, repayments, and borrower demographics.  
+Built on a dataset of **38,576 loans**, it visualizes key metrics like **total applications (39K)**, **funded amount ($436M)**, and **average interest rate (12%)**.  
+The dashboard helps identify trends, risks, and performance.
 
 ---
 
-## ✨ Key Features
-- **Multi-Dashboard Architecture** – Three interconnected dashboards (*Summary*, *Analytics*, *Details*)
-  
-- **Real-time KPI Monitoring** – 39K applications, $436M funded, 12% avg interest rate, 13.3% DTI
+## 📈 Key Visualizations
 
-- **Interactive Filtering** – Dynamic purpose and grade filters across all dashboards
-
-- **Geographic Analysis** – State-wise loan distribution with interactive US map visualization
- 
-- **Risk Assessment Tools** – Good vs Bad loan analysis with 86.18% success rate tracking
-
-- **Detailed Data Drill-down** – Individual loan record exploration with complete transaction history  
-
----
-
-## 🛠️ Tools & Technologies Used
-- **Database Management**: PostgreSQL for data storage and querying (38K+ records)
-  
-- **Data Visualization**: Power BI for interactive dashboard development
-  
-- **Database Tool**: pgAdmin 4 for database administration and SQL query execution
-  
-- **Design**: Professional UI/UX with consistent green banking theme and responsive layouts  
+- **Summary Metrics:** Cards showing total applications, funded/received amounts, avg interest rate (**12%**), and avg DTI (**13.3%**).
+- **Good vs Bad Loans Pie Chart:** **86.18%** good loans vs **13.82%** bad loans.
+- **Loan Applications by Home Ownership Bar Chart:** Highest for **RENT (18.4K)**, **MORTGAGE (17.2K)**, **OWN (2.8K)**.
+- **Loan Status Table:** Breakdown by status:  
+  - Fully Paid: 32,145 apps  
+  - Current: 1,098  
+  - Charged Off: 5,333  
+  Includes funded/received amounts and rates.
+- **Monthly Applications Line Chart:** Upward trend from ~2K in Jan to ~4K in Dec.
+- **Applications by State Map:** Highest in **CA** (darkest shade), followed by TX, NY, FL.
+- **Applications by Term Pie Chart:** **73.2%** for 36 months, **26.8%** for 60 months.
+- **Applications by Employee Experience Bar Chart:** Most for **10+ years**, decreasing for fewer years.
+- **Applications by Purpose Bar Chart:** Top purposes: **Debt consolidation**, credit card, home improvement.
+- **Funded vs Received Bar Chart:** Close alignment, with received slightly higher.
+- **Details Table:** Loan-level data including ID, purpose, ownership, grade, date, amounts, and rates.
 
 ---
 
-## 📋 Project Steps Performed
-- **Database Setup** – Configured PostgreSQL database with loan table containing 38,576 records
-  
-- **Data Exploration** – Analyzed loan data structure using pgAdmin 4 and SQL queries
-  
-- **Data Modeling** – Created relationships between loan metrics, geography, and customer segments
-  
-- **Dashboard Architecture** – Designed three-tier dashboard system (*Summary → Analytics → Details*)
-   
-- **Visualization Development** – Built interactive charts, maps, and KPI cards with drill-down capabilities
-   
-- **Testing & Validation** – Verified data accuracy and dashboard functionality across all user scenarios  
+## 🔍 Insights and Analysis
+
+- **Loan Performance:**  
+  - 86% good loans indicate strong portfolio health.  
+  - Charged-off loans (14%) total **$65M funded** but only **$37M received**, highlighting **$28M loss**.
+- **Borrower Trends:**  
+  - Renters dominate applications (47%), suggesting targeting homeowners for lower risk.  
+  - Debt consolidation is the top purpose (~50%), with high approval in CA/TX.
+- **Temporal Growth:**  
+  - Applications doubled from Jan to Dec, peaking in summer—potential seasonal marketing opportunity.
+- **Risk Factors:**  
+  - Higher interest rates (15%) for current loans.  
+  - 60-month terms riskier (26.8% share but higher DTI).
+- **Recovery Rate:**  
+  - Overall, received **$473M** vs funded **$436M** (**108% recovery**).  
+  - Charged-off at **57% recovery** signals need for better screening.
 
 ---
 
-## 📈 Key Insights Delivered
-- **Portfolio Performance** – 86.18% good loan rate with **$35M+ in fully paid loans**
-  
-- **Geographic Concentration** – *California* and *Texas* leading in loan volume and funding
-  
-- **Risk Distribution** – Debt consolidation dominates (**73.2%** of applications)
-  
-- **Temporal Trends** – Steady monthly growth from 2.3K to 4.3K applications
-  
-- **Customer Segmentation** – 10+ years experience employees represent highest application volume  
+## 🛠 Technologies Used
+
+- **Database:** PostgreSQL (managed via pgAdmin) for storing loan data.
+- **Data Visualization:** Power BI (or Tableau) for creating interactive dashboards with charts, maps, and tables.
+- **Querying:** SQL for data extraction (e.g., `SELECT * FROM loan;`).
+- **Other:** Potential Python (Pandas/Matplotlib) for preprocessing (optional).
 
 ---
 
-## 🎯 Business Problems Solved
-- **Risk Management** – Identified loan performance patterns with 13.82% default rate analysis
-   
-- **Portfolio Optimization** – Data-driven insights for loan approval and pricing strategies
-  
-- **Geographic Expansion** – State-wise performance analysis for market expansion decisions
-  
-- **Customer Targeting** – Employee experience and purpose-based segmentation for marketing
-   
-- **Operational Efficiency** – Streamlined loan monitoring with automated KPI tracking and alerts  
+## 📂 Project Steps
+
+1. **Data Collection:** Import loan dataset into PostgreSQL table `loan` with columns like `id`, `address_state`, `emp_length`, `grade`.
+2. **Database Setup:** Create schema in pgAdmin, load ~38K records.
+3. **Data Cleaning:** Handle missing values, format dates/amounts using SQL queries.
+4. **Dashboard Design:** Build views in Power BI/Tableau—summary cards, charts, map, and details table.
+5. **Analysis:** Generate insights from aggregations (e.g., `SUM` funded, `AVG` rates).
+6. **Deployment:** Export dashboard for web/desktop/mobile viewing.
+
+---
+
+## ▶ How to Use
+
+1. **Clone repo:**  
+   ```bash
+   git clone <repo-url>
+   ```
+2. **Set up PostgreSQL:**  
+   Import `loan.sql` dump into pgAdmin.
+3. **Open dashboard:**  
+   Load `.pbix` file in Power BI.
+4. **Filter:**  
+   Use dropdowns for purpose/grade to explore.
+5. **Query data:**  
+   Run SQL in pgAdmin for custom analysis.
+
+---
+
+## 📬 Contact
+For questions, reach out to **[your-email@example.com]** or open an issue on GitHub.
 
 ---
 
 ## 📜 License
-This project is licensed under the **MIT License** – see the [LICENSE](LICENSE) file for details.
-
----
-
-## 👨‍💻 Creator
-**Chaitanya Panicker**  
-
-📌 [LinkedIn Profile](https://www.linkedin.com/in/chaitanyapanicker/)  
+**MIT License** – Free to use, modify, and distribute.  
+See the [LICENSE](LICENSE) file for details.
