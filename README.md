@@ -1,51 +1,105 @@
-# Bank Loan Summary Dashboard
+# 🏦 Bank Loan Summary Dashboard
 
-## Project Overview
-This project is an interactive dashboard for analyzing bank loan data, providing insights into loan applications, funding, repayments, and borrower demographics. Built on a dataset of 38,576 loans, it visualizes key metrics like total applications (39K), funded amount ($436M), and average interest rate (12%). The dashboard helps identify trends, risks, and performance.
+<img width="1334" height="766" alt="Screenshot 1" src="https://github.com/user-attachments/assets/a214fa1a-9b69-4e48-a094-91bb37268002" />
 
-## Key Visualizations
-- **Summary Metrics**: Cards showing total applications, funded/received amounts, avg interest rate (12%), and avg DTI (13.3%)
-- **Good vs Bad Loans Pie Chart**: 86.18% good loans vs 13.82% bad loans
-- **Loan Applications by Home Ownership Bar Chart**: Highest for RENT (18.4K), MORTGAGE (17.2K), OWN (2.8K)
-- **Loan Status Table**: Breakdown by status (Fully Paid: 32,145 apps; Current: 1,098; Charged Off: 5,333) with funded/received amounts and rates
-- **Monthly Applications Line Chart**: Upward trend from ~2K in Jan to ~4K in Dec
-- **Applications by State Map**: Highest in CA (darkest shade), followed by TX, NY, FL
-- **Applications by Term Pie Chart**: 73.2% for 36 months, 26.8% for 60 months
-- **Applications by Employee Experience Bar Chart**: Most for 10+ years, decreasing for fewer years
-- **Applications by Purpose Bar Chart**: Top purposes: Debt consolidation, credit card, home improvement
-- **Funded vs Received Bar Chart**: Close alignment, with received slightly higher
-- **Details Table**: Loan-level data including ID, purpose, ownership, grade, date, amounts, rates
+## 📌 Project Overview
+This project delivers a **comprehensive analysis of bank loan performance** using data from PostgreSQL and interactive dashboards in Power BI. It uncovers key lending patterns, repayment behavior, and customer profiles to support **better risk assessment, targeted marketing, and lending strategy optimization**.
 
-## Insights and Analysis
-- **Loan Performance**: 86% good loans indicate strong portfolio health; charged-off loans (14%) total $65M funded but only $37M received, highlighting $28M loss
-- **Borrower Trends**: Renters dominate applications (47%), suggesting targeting homeowners for lower risk. Debt consolidation is the top purpose (~50%), with high approval in CA/TX
-- **Temporal Growth**: Applications doubled from Jan to Dec, peaking in summer—potential seasonal marketing opportunity
-- **Risk Factors**: Higher interest rates (15%) for current loans; 60-month terms riskier (26.8% share but higher DTI)
-- **Recovery Rate**: Overall, received $473M vs funded $436M (108% recovery), but charged-off at 57% recovery signals need for better screening
+The dataset contains **38,576 loan records** with details like loan status, funded amounts, repayment amounts, interest rates, debt-to-income ratio, customer demographics, and loan purposes.
 
-## Technologies Used
-- **Database**: PostgreSQL (managed via pgAdmin) for storing loan data
-- **Data Visualization**: Power BI (or Tableau) for creating interactive dashboards with charts, maps, and tables
-- **Querying**: SQL for data extraction (e.g., `SELECT * FROM loan;`)
-- **Other**: Potential Python (Pandas/Matplotlib) for preprocessing, though not shown
+---
 
-## Project Steps
-1. **Data Collection**: Import loan dataset into PostgreSQL table 'loan' with columns like id, address_state, emp_length, grade
-2. **Database Setup**: Create schema in pgAdmin, load ~38K records
-3. **Data Cleaning**: Handle missing values, format dates/amounts using SQL queries
-4. **Dashboard Design**: Build views in Power BI/Tableau—summary cards, charts, map, and details table
-5. **Analysis**: Generate insights from aggregations (e.g., SUM funded, AVG rates)
-6. **Deployment**: Export dashboard for web/desktop/mobile viewing
+## 📊 Key Visualizations
+- **Summary Metrics Cards**  
+  - **Total Loan Applications**: 39K  
+  - **Total Amount Funded**: $436M  
+  - **Total Amount Received**: $473M  
+  - **Average Interest Rate**: 12%  
+  - **Average DTI**: 13.3%  
 
-## How to Use
-1. Clone repo: `git clone <repo-url>`
-2. Set up PostgreSQL: Import loan.sql dump into pgAdmin
-3. Open dashboard: Load .pbix file in Power BI
-4. Filter: Use dropdowns for purpose/grade to explore
-5. Query data: Run SQL in pgAdmin for custom analysis
+- **Good Loan vs Bad Loan**  
+  Donut chart showing **86.18% good loans** vs **13.82% bad loans**.
 
-## Contact
-For questions, reach out to [your-email@example.com] or open an issue on GitHub.
+- **Loan Applications by Home Ownership**  
+  Majority from **RENT** and **MORTGAGE** categories.
 
-## License
-MIT License - Free to use, modify, and distribute. See LICENSE file for details.
+- **Trend Analysis**
+  - Monthly applications (steady growth, peak in Dec).
+  - State-level map (California leads in applications).
+  - Loan term breakdown (73% are 36-month loans).
+
+- **Demographic Insights**  
+  Applications by employee experience and loan purpose — **Debt Consolidation** dominates.
+
+- **Financial Health**  
+  Funding vs repayment comparisons for each loan status.
+
+---
+
+## 🔍 Insights & Analysis
+- **Healthy repayment behavior**: Over **86% of loans** are fully paid or current.
+- **Debt consolidation loans** dominate, suggesting opportunities for bundled financial products.
+- **Shorter loan terms (36 months)** are preferred, indicating a customer preference for faster payoff.
+- **California** stands out as the highest loan application state — potential for targeted campaigns.
+- Funding and repayment patterns show a strong recovery rate across most loan categories.
+
+---
+
+## 🛠 Technologies Used
+- **Database**: PostgreSQL  
+- **Query Tool**: pgAdmin 4  
+- **Visualization**: Power BI (DAX measures, interactive filters, maps, trend charts)  
+- **Languages**: SQL, DAX  
+- **Data Source**: Loan dataset from internal banking database  
+
+---
+
+## 🚀 Project Steps
+1. **Data Extraction**
+   - Connected to PostgreSQL database (`Bankdb`) via pgAdmin 4.
+   - Executed:
+     ```sql
+     SELECT * FROM loan;
+     ```
+2. **Data Cleaning**
+   - Removed duplicates, fixed date formats, standardized numeric values.
+
+3. **Data Loading**
+   - Imported PostgreSQL data into Power BI using a direct connection.
+
+4. **DAX Measures Creation**
+   - Total Amount Funded  
+   - Total Amount Received  
+   - Average Interest Rate  
+   - Average DTI  
+   - Good Loan % and Bad Loan %
+
+5. **Dashboard Building**
+   - Designed two main dashboards:
+     - **Performance Summary**
+     - **Detailed Loan Insights**
+   - Added slicers for loan purpose and grade filtering.
+
+6. **Validation**
+   - Cross-checked Power BI outputs with PostgreSQL aggregates.
+
+---
+
+## 📂 How to Use
+- Clone this repository.  
+- Open `.pbix` file in Power BI Desktop.  
+- Use slicers to filter by loan purpose or grade.  
+- Explore charts and hover for deeper insights.  
+- Export results as needed.
+
+---
+
+## 📬 Contact  
+👤 **Chaitanya Panicker**  
+📧 chaitanya.panicker98@gmail.com  
+🌐 https://www.linkedin.com/in/chaitanyapanicker 
+
+---
+
+## 📜 License  
+This project is licensed under the **MIT License** — free to use, modify, and share with attribution.
